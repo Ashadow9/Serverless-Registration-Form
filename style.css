@@ -1,0 +1,72 @@
+/* Container Styles */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #000; /* Black background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #fff; /* White text for contrast */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styles */
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff; /* White text for labels */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="submit"] {
+    width: 100%; /* Make all elements span full width of the container */
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #333; /* Dark border for contrast */
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Remove bottom margin for the last element in the form */
+form > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Input Styles (focused) */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff; /* White text on the button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
