@@ -1,8 +1,9 @@
 # Serverless-Registration-Form
 
 Step 1: Create DynamoDB Table
-Table Name: registration-form-table
-Partition key: email
+
+#Table Name: registration-form-table
+#Partition key: email
 
 Step 2: Create IAM Role for Lambda Function
 IAM Role Name: RegistrationFormRole
